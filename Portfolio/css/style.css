@@ -1,0 +1,420 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+/* VARIÁVEIS GERAIS */
+:root {
+    --purple: rgb(31, 15, 61);
+    --pink: rgb(123, 0, 100);
+    --text: rgb(67, 42, 56);
+
+    --title-font: "Yusei Magic", sans-serif;
+    --text-font: "Kosugi Maru", sans-serif;
+}
+
+
+/* CONFIGURAÇÕES GERAIS */
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(azure, aliceblue);
+
+    color: var(--text);
+    font-family: var(--text-font);
+
+    transition: background 1s, color 1s;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* IMAGEM DECORATIVA */
+#flower {
+    display: block;
+    height: auto;
+    padding: 0;
+
+    border-radius: 1px 1px 30px 30px;
+
+    filter: drop-shadow(0 5px 0 rgb(123, 42, 142));
+}
+
+
+/* CARTÃO DA VEE */
+#veeCard {
+    max-width: 400px;
+
+    background-color: rgb(5, 2, 67);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 40px;
+
+    filter: drop-shadow(0 5px 0 rgb(12, 1, 12));
+}
+
+#vee {
+    width: 144px;
+    height: auto;
+
+    display: block;
+    margin: auto;
+
+    border-radius: 39px;
+}
+
+#veeCard p {
+    color: white;
+    text-align: center;
+}
+
+
+/* TÍTULOS */
+h1 {
+    color: var(--purple);
+
+    font-family: var(--title-font);
+    font-weight: 400;
+
+    font-size: 50px;
+    text-align: center;
+
+    transition: font-size 0.5s;
+}
+
+h1:hover {
+    font-size: 55px;
+}
+
+h2,
+h3 {
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+
+/* TEXTOS */
+p {
+    color: var(--text);
+
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 20px;
+}
+
+li {
+    font-family: var(--title-font);
+}
+
+
+/* SEÇÕES */
+section {
+    padding: 20px;
+    scroll-margin-top: 15px;
+}
+
+
+/* MENU */
+#mainMenu {
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+    padding: 10px;
+}
+
+#mainMenu.menu-open {
+    display: flex;
+}
+
+#mainMenu a {
+    display: block;
+
+    text-align: center;
+    font-size: 14px;
+
+    font-family: var(--text-font);
+}
+
+
+/* BOTÕES */
+button {
+    display: block;
+
+    margin: 10px auto;
+    padding: 10px 16px;
+
+    font-family: var(--text-font);
+    cursor: pointer;
+
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+
+/* LINK PRINCIPAL */
+.mainLink {
+    display: block;
+    width: fit-content;
+
+    margin: 20px auto;
+    padding: 12px 18px;
+
+    background-color: var(--pink);
+    color: white;
+
+    border-radius: 15px;
+    text-decoration: none;
+
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.mainLink:hover {
+    transform: scale(1.05);
+}
+
+
+/* HABILIDADES */
+.skillsList {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+    padding: 20px;
+}
+
+
+/* FORMULÁRIO */
+#contactForm {
+    max-width: 500px;
+
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.formField input,
+.formField textarea {
+    max-width: 100%;
+
+    padding: 10px;
+
+    border: 2px solid var(--purple);
+    border-radius: 8px;
+
+    font-family: var(--text-font);
+}
+
+.formField textarea {
+    resize: vertical;
+}
+
+.formField input[type="checkbox"] {
+    width: auto;
+}
+
+.errorMessage {
+    color: #b00020;
+    font-size: 14px;
+}
+
+.privacyNotice {
+    font-size: 14px;
+}
+
+#successMessage {
+    font-size: 16px;
+}
+
+
+/* FOCO DE ACESSIBILIDADE */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--pink);
+    outline-offset: 3px;
+}
+
+
+/* RODAPÉ PRINCIPAL */
+.mainFooter {
+    margin-top: 0;
+    padding: 16px;
+
+    background-color: rgb(67, 15, 61);
+}
+
+.mainFooter h1,
+.mainFooter h2,
+.mainFooter p,
+.mainFooter a {
+    color: white;
+}
+
+.mainFooter a {
+    display: block;
+    text-align: center;
+
+    font-family: var(--text-font);
+}
+
+
+/* BOTÃO DE TEMA */
+#themeButton {
+    display: block;
+    margin: 15px auto;
+}
+
+
+/* RODAPÉ FINAL */
+.bottomFooter {
+    margin-top: auto;
+    padding: 2px;
+
+    background-color: rgb(12, 0, 0);
+    color: white;
+
+    text-align: center;
+    font-family: var(--text-font);
+}
+
+.bottomFooter p {
+    color: white;
+    font-size: 12px;
+}
+
+.bottomFooter a {
+    display: block;
+
+    color: white;
+    text-align: center;
+
+    font-family: var(--text-font);
+    font-size: 14px;
+}
+
+
+/* DECORAÇÃO BRILHANTE */
+.bonus {
+    width: 16px;
+    transition: transform 1s, width 1s;
+}
+
+.bonus:hover {
+    width: 17px;
+    transform: rotate(-360deg);
+}
+
+#doll {
+    background-color: rgb(12, 0, 0);
+    opacity: 0;
+}
+
+#doll img {
+    width: 400px;
+    height: 50px;
+}
+
+#doll:hover {
+    opacity: 1;
+}
+
+
+body.dark-theme {
+    --purple: rgb(220, 190, 255);
+    --pink: rgb(190, 90, 180);
+    --text: rgb(240, 230, 245);
+
+    background: rgb(24, 18, 35);
+    color: var(--text);
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p,
+body.dark-theme li {
+    color: var(--text);
+}
+
+body.dark-theme #about,
+body.dark-theme #skills,
+body.dark-theme #contact {
+    background-color: rgb(35, 27, 48);
+}
+
+body.dark-theme #contactForm input,
+body.dark-theme #contactForm textarea {
+    background-color: rgb(45, 36, 58);
+    color: white;
+    border-color: var(--pink);
+}
+
+@media (min-width: 768px) {
+
+    #mainMenu {
+        display: flex;
+
+        flex-direction: row;
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    .skillsList {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #veeCard {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .skillsList {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #veeCard {
+        max-width: 450px;
+    }
+}

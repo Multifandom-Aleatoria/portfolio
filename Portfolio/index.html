@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de YUME V3E.">
+    <title>Portfólio | YUME V3E</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+    <header>
+        <img src="img/Flower.png" id="flower" alt="Flor">
+        <button id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu"> ☰ Menu </button>
+        <nav id="mainMenu" aria-label="Menu principal">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre mim</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+
+            <h1>PORTFÓLIO ^^</h1>
+
+            <div id="veeCard">
+                <img
+                    src="img/Vee.jpg"
+                    id="vee"
+                    alt="Vee, representação artística de YUME V3E"
+                >
+
+                <p>Vee, minha persona e representação artística.</p>
+            </div>
+
+            <h2>Olá! <span id="greeting"></span>!</h2>
+
+            <p>
+                Eu sou YUME V3E, estudante e pessoa interessada
+                em tecnologia e criação digital.
+            </p>
+
+            <p>
+                Tenho interesse em artes visuais, música,
+                desenvolvimento de jogos e programação.
+            </p>
+
+            <a href="#skills" class="mainLink">
+                Conheça minhas habilidades
+            </a>
+
+        </section>
+
+
+        <section id="about">
+
+            <h2>Sobre mim!</h2>
+
+            <p>
+                Sou estudante de Desenvolvimento de Sistemas e tenho
+                interesse em unir criatividade e tecnologia. Gosto de
+                explorar diferentes formas de criação, especialmente
+                por meio das artes visuais, música e desenvolvimento de jogos.
+            </p>
+
+            <p>
+                Quero continuar aprendendo sobre desenvolvimento front-end,
+                aprimorar minha programação e desenvolver projetos que
+                expressem minhas ideias.
+            </p>
+
+        </section>
+        <section id="skills">
+
+            <h2>Minhas habilidades</h2>
+
+            <ul class="skillsList">
+                <li>HTML e CSS — praticando</li>
+                <li>JavaScript — em desenvolvimento</li>
+                <li>Python — em desenvolvimento</li>
+                <li>Desenho e artes visuais — praticando</li>
+                <li>Composição musical — em desenvolvimento</li>
+                <li>Desenvolvimento de jogos — em desenvolvimento</li>
+                <li>Inglês — intermediário-avançado</li>
+            </ul>
+
+        </section>
+        <section id="contact">
+
+            <h2>Entre em contato</h2>
+
+            <p>
+                Use o formulário abaixo para deixar uma mensagem.
+                Os dados não serão enviados para um servidor.
+            </p>
+
+            <form id="contactForm" novalidate>
+
+                <div class="formField">
+                    <label for="name">Nome:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                    >
+                    <small id="nameError" class="errorMessage"></small>
+                </div>
+                <div class="formField">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+                    <small id="emailError" class="errorMessage"></small>
+                </div>
+                <div class="formField">
+                    <label for="message">Mensagem:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5">
+                    </textarea>
+                    <small id="messageError" class="errorMessage"></small>
+                </div>
+                <div class="formField">
+                    <label for="consent">
+                        <input
+                            type="checkbox"
+                            id="consent"
+                            name="consent"
+                        >
+                        Concordo com o uso dos dados preenchidos
+                        para responder à mensagem.
+                    </label>
+                    <small id="consentError" class="errorMessage"></small>
+                </div>
+                <p class="privacyNotice">
+                    Este formulário é demonstrativo e não envia
+                    nem armazena seus dados.
+                </p>
+                <button type="submit">Enviar mensagem</button>
+                <p
+                    id="successMessage"
+                    role="status"
+                    aria-live="polite">
+                </p>
+            </form>
+        </section>
+    </main>
+
+<footer class="mainFooter">
+        <h2>Onde me encontrar</h2>
+        <p>ITCH.IO — plataforma de jogos indie:</p>
+        <a
+            href="https://yume-v3e.itch.io/"
+            target="_blank"
+            rel="noopener noreferrer">
+            YUME V3E
+        </a>
+        <button
+            id="themeButton"
+            type="button"
+            aria-label="Alternar tema claro e escuro">
+            Alternar tema
+        </button>
+    </footer>
+    
+    <footer class="bottomFooter">
+        <p>© <span id="currentYear"></span> YUME V3E</p>
+        <a href="#top">Voltar ao topo</a>
+        <img
+            class="bonus"
+            src="https://raw.githubusercontent.com/Multifandom-Aleatoria/edbyulebefygbyukufhbgkygfrbukgheryutr/main/UC30%20TRABALHO/Images/Sparkle.png"
+            alt="Decoração brilhante"
+        >
+        <div id="doll">
+            <img src="img/boneca.jpg" alt="Imagem surpresa da boneca">
+            <p>Boneca jumpscare</p>
+        </div>
+    </footer>
+</body>
+</html>
